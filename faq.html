@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — PeakPureCow Milk | Frequently Asked Questions</title>
+  <link rel="icon" href="imgs/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Find answers to common questions about PeakPureCow Milk — orders, shipping, returns, subscription, products, and more.">
+  <meta property="og:title" content="FAQ — PeakPureCow Milk">
+  <meta property="og:description" content="Quick answers to everything you need to know about PeakPureCow Milk.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="security.js"></script>
+  <script src="auth.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you keep dairy fresh during shipping?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All orders ship in insulated thermal boxes with gel ice packs. This keeps your dairy below 4°C for up to 36 hours. For Zone 3 deliveries, we use double-insulated packaging with extra cooling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my order arrives damaged or warm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact us within 48 hours and we'll send a free replacement or issue a full refund — no questions asked."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you deliver to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We deliver across Attock City (same-day), nearby towns like Hazro, Kamra, and Hasan Abdal (next-day), and Rawalpindi/Islamabad (1–2 days)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer subscription deliveries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Subscribe on our Shop page for weekly or bi-weekly deliveries with 10% off every order. Pause or cancel anytime."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ====== PRELOADER ====== -->
+  <div class="page-preloader" id="page-preloader">
+    <div class="preloader__spinner"></div>
+    <p class="preloader__text">PeakPureCow Milk</p>
+  </div>
+
+  <!-- ====== SCROLL PROGRESS ====== -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="home.html" class="logo"><img src="imgs/logo.svg" alt="PeakPureCow Milk logo" class="logo__icon" width="40" height="40">Peak<span>Pure</span>Cow Milk</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shop.html" class="btn btn--primary">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero hero--short">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about our products, orders, shipping, and more — all in one place.</p>
+    </div>
+  </section>
+
+  <!-- ====== SEARCH BAR ====== -->
+  <section class="section faq-search-section">
+    <div class="container">
+      <div class="faq-search-wrap">
+        <svg class="faq-search-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input type="text" id="faqSearch" class="faq-search-input" placeholder="Search questions... e.g. &quot;shipping&quot;, &quot;subscription&quot;, &quot;returns&quot;">
+      </div>
+      <p class="faq-search-count" id="faqSearchCount" hidden></p>
+    </div>
+  </section>
+
+  <!-- ====== FAQ CATEGORIES ====== -->
+  <section class="section section--alt faq-main-section">
+    <div class="container">
+
+      <!-- Category Nav -->
+      <div class="faq-category-nav" id="faqCategoryNav">
+        <button class="faq-category-btn faq-category-btn--active" data-category="all">All</button>
+        <button class="faq-category-btn" data-category="orders">Orders</button>
+        <button class="faq-category-btn" data-category="shipping">Shipping</button>
+        <button class="faq-category-btn" data-category="products">Products</button>
+        <button class="faq-category-btn" data-category="returns">Returns</button>
+        <button class="faq-category-btn" data-category="subscription">Subscription</button>
+        <button class="faq-category-btn" data-category="general">General</button>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-list" id="faqList">
+
+        <!-- ===== ORDERS ===== -->
+        <div class="faq-category-group" data-category="orders">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+            Orders
+          </h2>
+
+          <div class="faq-item" data-category="orders">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I place an order?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Visit our <a href="shop.html">Shop page</a>, browse our products, add items to your cart, and proceed to checkout. You can pay via cash on delivery or bank transfer.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="orders">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I modify or cancel my order after placing it?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — as long as your order hasn't been dispatched. Contact us via <a href="https://wa.me/923369413146" target="_blank" rel="noopener">WhatsApp</a> or <a href="contact.html">email</a> and we'll update it immediately.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="orders">
+            <button class="faq-question" aria-expanded="false">
+              <span>What payment methods do you accept?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We accept Cash on Delivery (COD), JazzCash, EasyPaisa, and direct bank transfer. All payment details are shown at checkout.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="orders">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is there a minimum order amount?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No minimum order is required. However, orders above Rs. 2,000 get free delivery for Zone 2, and above Rs. 5,000 for Zone 3.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SHIPPING ===== -->
+        <div class="faq-category-group" data-category="shipping">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            Shipping & Delivery
+          </h2>
+
+          <div class="faq-item" data-category="shipping">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do you keep dairy fresh during shipping?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>All orders ship in insulated thermal boxes with gel ice packs. This keeps your dairy below 4°C for up to 36 hours. For Zone 3 deliveries, we use double-insulated packaging with extra cooling.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="shipping">
+            <button class="faq-question" aria-expanded="false">
+              <span>What areas do you deliver to?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We deliver across three zones: <strong>Zone 1</strong> — Attock City (same-day, free), <strong>Zone 2</strong> — Hazro, Kamra, Hasan Abdal (next-day, Rs. 150), and <strong>Zone 3</strong> — Rawalpindi/Islamabad (1–2 days, Rs. 300). See full details on our <a href="shipping.html">Shipping page</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="shipping">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I change my delivery address after ordering?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — as long as your order hasn't been dispatched yet. Contact us via <a href="https://wa.me/923369413146" target="_blank" rel="noopener">WhatsApp</a> or <a href="contact.html">email</a> and we'll update it immediately.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="shipping">
+            <button class="faq-question" aria-expanded="false">
+              <span>What are your delivery hours?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Zone 1 (Attock City): deliveries between 7 AM – 8 PM. Zone 2 &amp; 3: deliveries between 9 AM – 6 PM. You'll receive an SMS/WhatsApp notification 30 minutes before delivery.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="shipping">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I track my order?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Visit the <a href="shipping.html">Shipping page</a> and enter your Order ID in the tracker. You'll see real-time status updates from dispatch to delivery.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== PRODUCTS ===== -->
+        <div class="faq-category-group" data-category="products">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+            Products
+          </h2>
+
+          <div class="faq-item" data-category="products">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is your milk 100% pure and natural?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Our milk is 100% farm-fresh, hormone-free, and contains no additives, preservatives, or water. It goes from cow to bottle within hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="products">
+            <button class="faq-question" aria-expanded="false">
+              <span>What products do you offer?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We offer fresh whole milk, cream-top milk, pure desi ghee, farm-fresh butter, and seasonal specialties. Check our <a href="products.html">Products page</a> for the full range.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="products">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long does your milk stay fresh?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>When refrigerated at or below 4°C, our fresh milk stays good for 3–5 days. Our ghee and butter have longer shelf lives — check each product label for specifics.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="products">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are your cows grass-fed?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Our cows graze on open pastures and are fed a natural, nutrient-rich diet. We never use growth hormones or antibiotics in our farming.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== RETURNS ===== -->
+        <div class="faq-category-group" data-category="returns">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 6.9c1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-.39.08-.75.21-1.1.36l1.51 1.51c.32-.14.7-.23 1.09-.23zM5.47 3.92L4.06 5.33 7.5 8.77c0 2.08 1.56 3.22 3.91 3.91l3.51 3.51c-.34.49-1.05.88-2.42.88-2.17 0-3.07-.95-3.2-2.1H7.09c.14 2.11 1.71 3.3 3.41 3.81V21h3v-2.15c1.12-.25 2.08-.82 2.68-1.63l2.89 2.89 1.41-1.41L5.47 3.92z"/></svg>
+            Returns & Refunds
+          </h2>
+
+          <div class="faq-item" data-category="returns">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if my order arrives damaged or warm?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Contact us within 48 hours and we'll send a free replacement or issue a full refund — no questions asked. Visit our <a href="returns.html">Returns page</a> to submit a request.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="returns">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I request a return or refund?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Go to our <a href="returns.html">Returns page</a>, fill in the form with your order details and reason, and submit. We process returns within 24 hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="returns">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long does a refund take?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Refunds are processed within 1–3 business days. COD refunds are sent via JazzCash/EasyPaisa, and bank transfers are refunded to the original account.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SUBSCRIPTION ===== -->
+        <div class="faq-category-group" data-category="subscription">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Subscription
+          </h2>
+
+          <div class="faq-item" data-category="subscription">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you offer subscription deliveries?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! Subscribe on our <a href="shop.html">Shop page</a> and get weekly or bi-weekly deliveries with 10% off every order. You can pause or cancel anytime.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="subscription">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I pause or cancel my subscription?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, you can pause or cancel your subscription at any time — no penalties or hidden fees. Just reach out via <a href="https://wa.me/923369413146" target="_blank" rel="noopener">WhatsApp</a> or <a href="contact.html">contact us</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="subscription">
+            <button class="faq-question" aria-expanded="false">
+              <span>What discount do subscribers get?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>All subscribers receive 10% off every delivery. Bulk subscribers (5+ litres/week) may qualify for additional discounts — contact us for details.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== GENERAL ===== -->
+        <div class="faq-category-group" data-category="general">
+          <h2 class="faq-category-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+            General
+          </h2>
+
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where is your farm located?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Our farm is located near Beacon House School, Attock, Pakistan. You're welcome to visit — just <a href="contact.html">get in touch</a> to schedule a tour.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you offer bulk or wholesale orders?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We offer competitive wholesale pricing for restaurants, cafés, and retailers. <a href="contact.html">Contact us</a> with your requirements and we'll send you a custom quote.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I contact you?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Reach us via <a href="https://wa.me/923369413146" target="_blank" rel="noopener">WhatsApp</a>, <a href="mailto:awaisrazaattari0@gmail.com">email</a>, phone (+92 336 941 3146), or visit our <a href="contact.html">Contact page</a> for all channels.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results Message -->
+      <div class="faq-no-results" id="faqNoResults" hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" style="opacity:0.3;"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <p>No questions match your search. Try different keywords or <a href="contact.html">contact us</a> directly.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="section faq-cta-section">
+    <div class="container text-center">
+      <h2>Still Have Questions?</h2>
+      <p style="max-width:550px; margin:0 auto 2rem;">Can't find what you're looking for? Our team is always happy to help.</p>
+      <div class="faq-cta-buttons">
+        <a href="contact.html" class="btn btn--gold">Contact Us</a>
+        <a href="https://wa.me/923369413146" target="_blank" rel="noopener" class="btn btn--outline">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Peak<span style="color: var(--color-gold);">Pure</span>Cow Milk</h4>
+          <p>Premium, farm-fresh dairy for families who believe in eating well and living sustainably. From our pasture to your table since 2025.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/17UFMVhR2B/" aria-label="Facebook" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/peakpurecowmilk?igsh=ejdtYzNreDQ5OGMz" aria-label="Instagram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://x.com/razirehn95974" aria-label="Twitter" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://t.me/peakpurwcowmilk" aria-label="Telegram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>R956+PXC Near Beacon House School, Attock, Pakistan</p>
+          <p>awaisrazaattari0@gmail.com<br>+92 336 941 3146</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PeakPureCow Milk. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="PeakPureCow Milk.js"></script>
+  <script src="faq.js"></script>
+
+  <!-- ====== CHATBOT WIDGET ====== -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 1 4.35L2 22l5.65-1C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-2 13.5c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5h-1zm3.07-4.25c-.43.51-.9.8-.9 1.25v.5h-1.5v-.65c0-.78.54-1.3 1.03-1.75.43-.39.72-.67.72-1.1 0-.55-.45-1-1-1-.56 0-1 .45-1 1H8.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .76-.53 1.28-.93 1.75z"/></svg>
+      </div>
+      <div class="chatbot-header-info">
+        <h3>Peak Pure Assistant</h3>
+        <p>Online &#8212; Ask me anything!</p>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" placeholder="Type your question..." aria-label="Type your message" maxlength="500">
+      <button class="chatbot-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="floating-widgets">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Peak Pure Assistant">
+      <svg class="icon-chat" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>

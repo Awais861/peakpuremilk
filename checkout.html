@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — PeakPureCow Milk | Complete Your Order</title>
+  <link rel="icon" href="imgs/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Review your PeakPureCow Milk order and complete checkout. Secure payment, free shipping on orders over Rs.5,000.">
+  <meta property="og:title" content="Checkout — PeakPureCow Milk">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="security.js"></script>
+  <script src="auth.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.PeakPureCow Milk.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://www.PeakPureCow Milk.com/shop" },
+      { "@type": "ListItem", "position": 3, "name": "Checkout", "item": "https://www.PeakPureCow Milk.com/checkout" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ====== PRELOADER ====== -->
+  <div class="page-preloader" id="page-preloader">
+    <div class="preloader__spinner"></div>
+    <p class="preloader__text">PeakPureCow Milk</p>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="home.html" class="logo"><img src="imgs/logo.svg" alt="PeakPureCow Milk logo" class="logo__icon" width="40" height="40">Peak<span>Pure</span>Cow Milk</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shop.html" class="btn btn--primary">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero hero--short">
+    <div class="container">
+      <h1>Checkout</h1>
+      <p>Review your order, enter your details, and confirm your farm-fresh delivery.</p>
+    </div>
+  </section>
+
+  <!-- ====== CHECKOUT CONTENT ====== -->
+  <section class="section">
+    <div class="container">
+      <div class="checkout-layout">
+
+        <!-- LEFT: Order Summary -->
+        <div class="checkout-order">
+          <h2>Your Order</h2>
+          <div id="checkout-items">
+            <!-- Populated by JS from cart -->
+          </div>
+          <div id="checkout-empty" class="checkout-empty" style="display:none;">
+            <p>Your cart is empty.</p>
+            <a href="shop.html" class="btn btn--outline">Continue Shopping</a>
+          </div>
+          <div id="checkout-totals" class="checkout-totals"></div>
+        </div>
+
+        <!-- RIGHT: Checkout Form -->
+        <div class="checkout-form-wrap">
+          <h2>Delivery &amp; Payment</h2>
+          <form id="checkout-form" novalidate>
+
+            <!-- Contact -->
+            <fieldset class="checkout-fieldset">
+              <legend>Contact Information</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkout-fname">First Name <span class="required">*</span></label>
+                  <input type="text" id="checkout-fname" name="firstName" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="checkout-lname">Last Name <span class="required">*</span></label>
+                  <input type="text" id="checkout-lname" name="lastName" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="checkout-email">Email <span class="required">*</span></label>
+                <input type="email" id="checkout-email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="checkout-phone">Phone <span class="required">*</span></label>
+                <input type="tel" id="checkout-phone" name="phone" required autocomplete="tel">
+              </div>
+            </fieldset>
+
+            <!-- Shipping Address -->
+            <fieldset class="checkout-fieldset">
+              <legend>Shipping Address</legend>
+              <div class="form-group">
+                <label for="checkout-address">Street Address <span class="required">*</span></label>
+                <input type="text" id="checkout-address" name="address" required autocomplete="street-address">
+              </div>
+              <div class="form-group">
+                <label for="checkout-address2">Apt / Suite / Floor</label>
+                <input type="text" id="checkout-address2" name="address2" autocomplete="address-line2">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkout-city">City <span class="required">*</span></label>
+                  <input type="text" id="checkout-city" name="city" required autocomplete="address-level2">
+                </div>
+                <div class="form-group">
+                  <label for="checkout-state">State <span class="required">*</span></label>
+                  <input type="text" id="checkout-state" name="state" required autocomplete="address-level1">
+                </div>
+                <div class="form-group">
+                  <label for="checkout-zip">ZIP Code <span class="required">*</span></label>
+                  <input type="text" id="checkout-zip" name="zip" required autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" inputmode="numeric">
+                </div>
+              </div>
+              <!-- Auto-detected delivery zone -->
+              <div class="zone-info" id="zone-info" style="display:none;"></div>
+            </fieldset>
+
+            <!-- Payment Method Selection -->
+            <fieldset class="checkout-fieldset">
+              <legend>Payment Method</legend>
+              <p class="payment-method__note">We accept Visa, Mastercard &amp; PayPal only.</p>
+              <div class="payment-methods" id="payment-methods">
+                <label class="payment-card" data-method="visa">
+                  <input type="radio" name="paymentMethod" value="visa" required>
+                  <div class="payment-card__inner">
+                    <svg class="payment-card__icon" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48" height="32" rx="4" fill="#1A1F71"/>
+                      <path d="M19.5 21h-2.7l1.7-10.5h2.7L19.5 21zm11.2-10.2c-.5-.2-1.4-.4-2.4-.4-2.7 0-4.5 1.4-4.6 3.4 0 1.5 1.3 2.3 2.4 2.8 1 .5 1.4.8 1.4 1.3 0 .7-.8 1-1.6 1-1.1 0-1.6-.2-2.5-.5l-.3-.2-.4 2.2c.6.3 1.8.5 3 .5 2.8 0 4.7-1.4 4.7-3.5 0-1.2-.7-2-2.3-2.8-.9-.5-1.5-.8-1.5-1.3 0-.4.5-.9 1.5-.9.9 0 1.5.2 2 .4l.2.1.4-2.1zm6.8 0h-2.1c-.6 0-1.1.2-1.4.8L30.3 21h2.8l.6-1.5h3.5l.3 1.5h2.5l-2.2-10.5h-2.3zm-2.2 6.8l1.1-3 .3-.8.2.7.6 3.1h-2.2zM16.3 10.5L13.7 18l-.3-1.4c-.5-1.6-2-3.4-3.7-4.3l2.4 8.7h2.9l4.3-10.5h-3z" fill="#fff"/>
+                      <path d="M11.5 10.5H7.1l0 .2c3.4.9 5.6 2.9 6.5 5.4l-.9-4.7c-.2-.6-.7-.8-1.2-.9z" fill="#F9A533"/>
+                    </svg>
+                    <span class="payment-card__name">Visa</span>
+                    <span class="payment-card__check">&#10003;</span>
+                  </div>
+                </label>
+                <label class="payment-card" data-method="mastercard">
+                  <input type="radio" name="paymentMethod" value="mastercard" required>
+                  <div class="payment-card__inner">
+                    <svg class="payment-card__icon" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48" height="32" rx="4" fill="#252525"/>
+                      <circle cx="19" cy="16" r="8" fill="#EB001B"/>
+                      <circle cx="29" cy="16" r="8" fill="#F79E1B"/>
+                      <path d="M24 10.3a8 8 0 0 1 0 11.4 8 8 0 0 1 0-11.4z" fill="#FF5F00"/>
+                    </svg>
+                    <span class="payment-card__name">Mastercard</span>
+                    <span class="payment-card__check">&#10003;</span>
+                  </div>
+                </label>
+                <label class="payment-card" data-method="paypal">
+                  <input type="radio" name="paymentMethod" value="paypal" required>
+                  <div class="payment-card__inner">
+                    <svg class="payment-card__icon" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48" height="32" rx="4" fill="#F5F7FA"/>
+                      <path d="M18.5 24.5h-2.4c-.2 0-.3-.1-.3-.3l1.9-12c0-.1.1-.2.3-.2h4.5c1.5 0 2.5.3 3.1 1 .6.6.8 1.5.6 2.6v.2l-.1.6c-.5 2.5-2.2 3.5-4.4 3.5h-1.1c-.3 0-.6.3-.7.6l-.6 3.5c0 .1-.1.2-.3.2l-.5.3z" fill="#253B80"/>
+                      <path d="M33.5 12.7c-.5 2.8-2.3 3.8-4.6 3.8h-1.2c-.4 0-.6.3-.7.6l-.7 4c0 .2.1.3.3.3h2.1c.2 0 .4-.2.4-.3l.5-3.2c0-.3.3-.6.7-.6H31c2.3 0 4.1-1 4.6-3.8.2-1.2.1-2.1-.4-2.8-.3-.1-.5-.2-.7 0l-1 2z" fill="#179BD7"/>
+                      <path d="M20.3 12.6c.1-.3.3-.6.6-.7.1 0 .3-.1.4-.1h5.5c.7 0 1.3.1 1.8.2.2 0 .3.1.5.2.1 0 .2.1.3.2.1 0 .1.1.2.1.3-.2.6-.4.8-.7.5-.7.6-1.6.4-2.8-.6-1.4-2-2-3.9-2h-4.5c-.4 0-.7.3-.8.6l-1.9 12c0 .2.1.4.3.4h2.6l.7-4.4.6-3z" fill="#253B80"/>
+                    </svg>
+                    <span class="payment-card__name">PayPal</span>
+                    <span class="payment-card__check">&#10003;</span>
+                  </div>
+                </label>
+              </div>
+              <div class="payment-method__error" id="payment-method-error" style="display:none;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                <span>Please select a valid payment method (Visa, Mastercard, or PayPal).</span>
+              </div>
+            </fieldset>
+
+            <!-- Card Details (hidden for PayPal) -->
+            <fieldset class="checkout-fieldset" id="card-details-fieldset">
+              <legend>Card Details</legend>
+              <div class="payment-detected" id="payment-detected" style="display:none;">
+                <span class="payment-detected__icon" id="detected-card-icon"></span>
+                <span class="payment-detected__text" id="detected-card-text"></span>
+              </div>
+              <div class="form-group">
+                <label for="checkout-card">Card Number <span class="required">*</span></label>
+                <input type="text" id="checkout-card" name="cardNumber" required autocomplete="cc-number" inputmode="numeric" placeholder="1234 5678 9012 3456" maxlength="19">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkout-exp">Expiry <span class="required">*</span></label>
+                  <input type="text" id="checkout-exp" name="expiry" required autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="checkout-cvv">CVV <span class="required">*</span></label>
+                  <input type="text" id="checkout-cvv" name="cvv" required autocomplete="cc-csc" placeholder="123" maxlength="4" inputmode="numeric">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="checkout-cardname">Name on Card <span class="required">*</span></label>
+                <input type="text" id="checkout-cardname" name="cardName" required autocomplete="cc-name">
+              </div>
+            </fieldset>
+
+            <!-- PayPal Details (hidden by default, shown when PayPal selected) -->
+            <fieldset class="checkout-fieldset" id="paypal-details-fieldset" style="display:none;">
+              <legend>PayPal Login</legend>
+              <div class="paypal-info-banner">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>You will be redirected to PayPal to complete your payment securely.</span>
+              </div>
+              <div class="form-group">
+                <label for="checkout-paypal-email">PayPal Email <span class="required">*</span></label>
+                <input type="email" id="checkout-paypal-email" name="paypalEmail" autocomplete="email" placeholder="your@email.com">
+              </div>
+            </fieldset>
+
+            <!-- Order Notes -->
+            <fieldset class="checkout-fieldset">
+              <legend>Order Notes <span style="font-weight:400;font-size:0.85rem;">(optional)</span></legend>
+              <div class="form-group">
+                <textarea id="checkout-notes" name="notes" rows="3" placeholder="Delivery instructions, allergies, etc."></textarea>
+              </div>
+            </fieldset>
+
+            <div class="checkout-actions">
+              <a href="shop.html" class="btn btn--outline">&#8592; Back to Shop</a>
+              <button type="submit" class="btn btn--primary btn--lg" id="checkout-submit">Place Order</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ORDER CONFIRMATION (hidden by default) ====== -->
+  <section class="section checkout-confirmation" id="order-confirmation" style="display:none;">
+    <div class="container text-center">
+      <div class="confirmation-box">
+        <div class="confirmation-icon">&#10003;</div>
+        <h2>Order Confirmed!</h2>
+
+        <div class="confirmation-order-id">
+          <span>Your Order ID</span>
+          <strong class="confirmation-id"></strong>
+          <p class="confirmation-id-hint">Save this ID to track your order anytime.</p>
+        </div>
+
+        <div class="confirmation-details">
+          <div class="confirmation-detail">
+            <span class="confirmation-detail__label">Delivery Zone</span>
+            <strong class="confirmation-zone"></strong>
+          </div>
+          <div class="confirmation-detail">
+            <span class="confirmation-detail__label">Shipping</span>
+            <strong class="confirmation-shipping"></strong>
+          </div>
+          <div class="confirmation-detail">
+            <span class="confirmation-detail__label">Estimated Delivery</span>
+            <strong class="confirmation-delivery"></strong>
+          </div>
+        </div>
+
+        <p>Thank you for choosing PeakPureCow Milk. We've received your order and will begin preparing your farm-fresh delivery right away.</p>
+        <p>A confirmation email has been sent to <strong class="confirmation-email"></strong>.</p>
+        <div style="margin-top: 2rem;">
+          <a href="shipping.html" class="btn btn--gold">Track My Order</a>
+          <a href="home.html" class="btn btn--outline" style="margin-left: 1rem;">Return Home</a>
+          <a href="shop.html" class="btn btn--primary" style="margin-left: 1rem;">Shop More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Peak<span style="color: var(--color-gold);">Pure</span>Milk</h4>
+          <p>Premium, farm-fresh dairy for families who believe in eating well and living sustainably. From our pasture to your table since 2025.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>R956+PXCNear Beacon House School, Attock</p>
+          <p>awaisrazaattari0@gmail.com<br>+92 3369413146</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PeakPureCow Milk. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="PeakPureCow Milk.js"></script>
+
+  <!-- ====== CHATBOT WIDGET ====== -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 1 4.35L2 22l5.65-1C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-2 13.5c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5h-1zm3.07-4.25c-.43.51-.9.8-.9 1.25v.5h-1.5v-.65c0-.78.54-1.3 1.03-1.75.43-.39.72-.67.72-1.1 0-.55-.45-1-1-1-.56 0-1 .45-1 1H8.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .76-.53 1.28-.93 1.75z"/></svg>
+      </div>
+      <div class="chatbot-header-info">
+        <h3>Peak Pure Assistant</h3>
+        <p>Online &#8212; Ask me anything!</p>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" placeholder="Type your question..." aria-label="Type your message" maxlength="500">
+      <button class="chatbot-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="floating-widgets">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Peak Pure Assistant">
+      <svg class="icon-chat" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>

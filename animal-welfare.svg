@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#d8eef8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)" rx="12"/>
+  <!-- Clouds -->
+  <ellipse cx="120" cy="50" rx="45" ry="18" fill="#fff" opacity="0.7"/>
+  <ellipse cx="400" cy="40" rx="55" ry="20" fill="#fff" opacity="0.6"/>
+  <!-- Open barn -->
+  <rect x="80" y="160" width="440" height="150" fill="#8B6914" opacity="0.4"/>
+  <!-- Roof -->
+  <polygon points="60,160 300,90 540,160" fill="#6B4914" opacity="0.5"/>
+  <!-- Open sides effect -->
+  <rect x="80" y="160" width="440" height="150" fill="none" stroke="#8B6914" stroke-width="2" opacity="0.5"/>
+  <!-- Support posts -->
+  <rect x="85" y="160" width="10" height="150" fill="#8B6914" opacity="0.6"/>
+  <rect x="225" y="160" width="10" height="150" fill="#8B6914" opacity="0.6"/>
+  <rect x="365" y="160" width="10" height="150" fill="#8B6914" opacity="0.6"/>
+  <rect x="505" y="160" width="10" height="150" fill="#8B6914" opacity="0.6"/>
+  <!-- Open air gaps between posts (lighter) -->
+  <rect x="96" y="162" width="128" height="50" fill="#b8e0f0" opacity="0.3"/>
+  <rect x="236" y="162" width="128" height="50" fill="#b8e0f0" opacity="0.3"/>
+  <rect x="376" y="162" width="128" height="50" fill="#b8e0f0" opacity="0.3"/>
+  <!-- Straw floor -->
+  <rect x="80" y="290" width="440" height="20" fill="#d4b878" opacity="0.5"/>
+  <!-- Straw texture -->
+  <line x1="100" y1="295" x2="120" y2="292" stroke="#c0a050" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="298" x2="225" y2="294" stroke="#c0a050" stroke-width="1" opacity="0.5"/>
+  <line x1="350" y1="293" x2="380" y2="296" stroke="#c0a050" stroke-width="1" opacity="0.5"/>
+  <!-- Happy cow 1 - lying down -->
+  <ellipse cx="180" cy="270" rx="45" ry="22" fill="#f5f0e8"/>
+  <!-- Spots -->
+  <ellipse cx="170" cy="265" rx="10" ry="8" fill="#8a6a3a" opacity="0.4"/>
+  <ellipse cx="195" cy="272" rx="8" ry="6" fill="#8a6a3a" opacity="0.3"/>
+  <!-- Head -->
+  <ellipse cx="140" cy="255" rx="18" ry="15" fill="#f5f0e8"/>
+  <!-- Ears -->
+  <ellipse cx="128" cy="245" rx="8" ry="4" fill="#e8ddd0" transform="rotate(-20,128,245)"/>
+  <ellipse cx="152" cy="245" rx="8" ry="4" fill="#e8ddd0" transform="rotate(20,152,245)"/>
+  <!-- Eyes - happy/closed -->
+  <path d="M133,253 Q136,250 139,253" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M143,253 Q146,250 149,253" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="141" cy="262" rx="8" ry="5" fill="#e8c0b0"/>
+  <!-- Happy cow 2 - standing -->
+  <ellipse cx="350" cy="265" rx="40" ry="20" fill="#e8ddd0"/>
+  <ellipse cx="350" cy="265" rx="40" ry="20" fill="none" stroke="#d8cdb0" stroke-width="0.5"/>
+  <!-- Spots -->
+  <ellipse cx="340" cy="260" rx="8" ry="6" fill="#6a4a2a" opacity="0.3"/>
+  <ellipse cx="365" cy="268" rx="10" ry="7" fill="#6a4a2a" opacity="0.3"/>
+  <!-- Legs -->
+  <rect x="325" y="282" width="6" height="20" rx="2" fill="#d8c8a8"/>
+  <rect x="340" y="284" width="6" height="20" rx="2" fill="#d8c8a8"/>
+  <rect x="360" y="283" width="6" height="20" rx="2" fill="#d8c8a8"/>
+  <rect x="375" y="282" width="6" height="20" rx="2" fill="#d8c8a8"/>
+  <!-- Head -->
+  <ellipse cx="315" cy="248" rx="16" ry="13" fill="#e8ddd0"/>
+  <!-- Eyes - happy -->
+  <path d="M308,246 Q311,243 314,246" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M318,246 Q321,243 324,246" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="316" cy="255" rx="7" ry="4" fill="#e8c0b0"/>
+  <!-- Heart above -->
+  <path d="M340,225 Q340,218 345,218 Q350,218 350,225 Q350,218 355,218 Q360,218 360,225 Q360,235 350,240 Q340,235 340,225" fill="#e85050" opacity="0.6"/>
+  <!-- Water trough -->
+  <rect x="430" y="270" width="60" height="25" rx="4" fill="#888" opacity="0.5"/>
+  <rect x="433" y="273" width="54" height="15" rx="3" fill="#a0d0e8" opacity="0.5"/>
+  <!-- Green pasture outside -->
+  <path d="M0,310 Q150,305 300,310 Q450,315 600,308 L600,400 L0,400 Z" fill="#4a8a3a" opacity="0.5"/>
+  <!-- Branding -->
+  <rect x="180" y="345" width="240" height="40" rx="8" fill="#2e5339" opacity="0.85"/>
+  <text x="300" y="363" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="12" font-weight="bold">PEAK PURE</text>
+  <text x="300" y="379" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="10">Happy Cows, Happy Milk</text>
+</svg>

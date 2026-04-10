@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf6ef"/>
+      <stop offset="100%" style="stop-color:#f5eed8"/>
+    </linearGradient>
+    <linearGradient id="butter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8d0"/>
+      <stop offset="100%" style="stop-color:#f0d870"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <ellipse cx="300" cy="340" rx="260" ry="28" fill="#2e5339" opacity="0.06"/>
+  <!-- Wooden board -->
+  <path d="M160,260 L440,260 Q460,260 460,250 L460,240 Q460,230 440,230 L160,230 Q140,230 140,240 L140,250 Q140,260 160,260 Z" fill="#b8860b" opacity="0.3"/>
+  <rect x="150" y="232" width="300" height="28" rx="4" fill="#c89a40" opacity="0.5"/>
+  <line x1="160" y1="240" x2="440" y2="240" stroke="#b8860b" stroke-width="0.5" opacity="0.4"/>
+  <line x1="160" y1="248" x2="440" y2="248" stroke="#b8860b" stroke-width="0.5" opacity="0.4"/>
+  <!-- Butter block -->
+  <path d="M220,130 L380,130 L380,230 L220,230 Z" fill="url(#butter)" stroke="#e0c850" stroke-width="1.5"/>
+  <!-- Top face (3D effect) -->
+  <path d="M220,130 L240,110 L400,110 L380,130 Z" fill="#fff8d0" stroke="#e0c850" stroke-width="1"/>
+  <!-- Side face -->
+  <path d="M380,130 L400,110 L400,210 L380,230 Z" fill="#e8c840" stroke="#e0c850" stroke-width="1"/>
+  <!-- Butter texture lines -->
+  <line x1="240" y1="150" x2="360" y2="150" stroke="#e8d060" stroke-width="0.5" opacity="0.5"/>
+  <line x1="240" y1="180" x2="360" y2="180" stroke="#e8d060" stroke-width="0.5" opacity="0.5"/>
+  <line x1="240" y1="210" x2="360" y2="210" stroke="#e8d060" stroke-width="0.5" opacity="0.5"/>
+  <!-- Label on butter -->
+  <rect x="255" y="148" width="100" height="65" rx="4" fill="#2e5339" opacity="0.9"/>
+  <text x="305" y="167" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="10" font-weight="bold">PEAK PURE</text>
+  <text x="305" y="187" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">UNSALTED</text>
+  <text x="305" y="203" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">BUTTER</text>
+  <!-- Knife -->
+  <path d="M430,140 L445,135 L475,210 L465,215 Z" fill="#c0c0c8"/>
+  <path d="M430,140 L445,135 L440,148 L428,150 Z" fill="#d8d8e0"/>
+  <rect x="455" y="210" width="12" height="50" rx="3" fill="#8B6914"/>
+  <!-- Butter curl -->
+  <path d="M185,180 Q170,160 180,145 Q195,155 185,180" fill="#f8e060" opacity="0.7"/>
+  <!-- Hand-churned badge -->
+  <circle cx="180" cy="130" r="30" fill="#2e5339" opacity="0.85"/>
+  <text x="180" y="126" text-anchor="middle" fill="#c8a951" font-family="Arial,sans-serif" font-size="7" font-weight="bold">HAND</text>
+  <text x="180" y="138" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="7" font-weight="bold">CHURNED</text>
+  <text x="300" y="375" text-anchor="middle" fill="#2e5339" font-family="Georgia,serif" font-size="16" font-weight="bold" opacity="0.6">Unsalted Butter</text>
+</svg>

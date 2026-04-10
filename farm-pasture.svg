@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="60%" style="stop-color:#c8e8f8"/>
+      <stop offset="100%" style="stop-color:#e8f4e8"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="80%" cy="20%">
+      <stop offset="0%" style="stop-color:#fff8c0"/>
+      <stop offset="100%" style="stop-color:rgba(255,248,192,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)" rx="12"/>
+  <rect width="600" height="400" fill="url(#sun)" rx="12" opacity="0.5"/>
+  <!-- Sun -->
+  <circle cx="490" cy="70" r="35" fill="#f8e060" opacity="0.8"/>
+  <circle cx="490" cy="70" r="25" fill="#fff8c0"/>
+  <!-- Mountains -->
+  <polygon points="0,250 60,170 120,210 180,150 260,200 320,160 400,190 460,155 520,200 580,170 600,190 600,250" fill="#2e5339" opacity="0.4"/>
+  <polygon points="0,270 80,210 160,240 240,195 340,235 420,205 500,240 600,210 600,270" fill="#2e5339" opacity="0.3"/>
+  <!-- Rolling hills -->
+  <path d="M0,300 Q150,250 300,270 Q450,290 600,260 L600,400 L0,400 Z" fill="#4a8a3a" opacity="0.6"/>
+  <path d="M0,320 Q200,290 350,310 Q500,330 600,300 L600,400 L0,400 Z" fill="#3a7a2a" opacity="0.7"/>
+  <!-- Fence -->
+  <line x1="50" y1="300" x2="50" y2="280" stroke="#8B6914" stroke-width="3"/>
+  <line x1="110" y1="295" x2="110" y2="275" stroke="#8B6914" stroke-width="3"/>
+  <line x1="170" y1="292" x2="170" y2="272" stroke="#8B6914" stroke-width="3"/>
+  <line x1="40" y1="285" x2="180" y2="277" stroke="#8B6914" stroke-width="2"/>
+  <!-- Cows -->
+  <ellipse cx="280" cy="295" rx="30" ry="18" fill="#f5f0e8"/>
+  <ellipse cx="260" cy="285" rx="12" ry="10" fill="#f5f0e8"/>
+  <circle cx="255" cy="282" r="2" fill="#333"/>
+  <rect x="265" y="308" width="5" height="12" rx="2" fill="#888"/>
+  <rect x="280" y="310" width="5" height="12" rx="2" fill="#888"/>
+  <rect x="290" y="308" width="5" height="12" rx="2" fill="#888"/>
+  <ellipse cx="440" cy="305" rx="25" ry="15" fill="#f5f0e8"/>
+  <ellipse cx="422" cy="296" rx="10" ry="8" fill="#f5f0e8"/>
+  <circle cx="418" cy="293" r="2" fill="#333"/>
+  <!-- Barn -->
+  <rect x="480" y="250" width="60" height="50" fill="#8B3A3A"/>
+  <polygon points="480,250 510,225 540,250" fill="#6B2A2A"/>
+  <rect x="500" y="270" width="20" height="30" fill="#5B2A1A"/>
+  <!-- Branding -->
+  <rect x="180" y="340" width="240" height="40" rx="8" fill="#2e5339" opacity="0.85"/>
+  <text x="300" y="358" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="12" font-weight="bold">PEAK PURE</text>
+  <text x="300" y="374" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="10">Our Green Pastures</text>
+</svg>

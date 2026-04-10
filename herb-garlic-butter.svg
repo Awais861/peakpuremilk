@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f8e8"/>
+      <stop offset="100%" style="stop-color:#f5eed8"/>
+    </linearGradient>
+    <linearGradient id="butter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8e880"/>
+      <stop offset="100%" style="stop-color:#d8b830"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <ellipse cx="300" cy="340" rx="260" ry="28" fill="#2e5339" opacity="0.06"/>
+  <!-- Wooden board -->
+  <rect x="150" y="232" width="300" height="28" rx="4" fill="#c89a40" opacity="0.5"/>
+  <!-- Butter block -->
+  <path d="M220,130 L380,130 L380,230 L220,230 Z" fill="url(#butter)" stroke="#c8a830" stroke-width="1.5"/>
+  <path d="M220,130 L240,110 L400,110 L380,130 Z" fill="#f8e880" stroke="#c8a830" stroke-width="1"/>
+  <path d="M380,130 L400,110 L400,210 L380,230 Z" fill="#c8a830" stroke="#c8a830" stroke-width="1"/>
+  <!-- Herb flecks on top -->
+  <ellipse cx="265" cy="117" rx="4" ry="2" fill="#2e5339" opacity="0.6" transform="rotate(-20,265,117)"/>
+  <ellipse cx="295" cy="114" rx="3" ry="1.5" fill="#4a7a4a" opacity="0.5" transform="rotate(15,295,114)"/>
+  <ellipse cx="330" cy="118" rx="4" ry="2" fill="#2e5339" opacity="0.6" transform="rotate(-30,330,118)"/>
+  <ellipse cx="360" cy="115" rx="3" ry="1.5" fill="#4a7a4a" opacity="0.5" transform="rotate(25,360,115)"/>
+  <circle cx="280" cy="120" r="1.5" fill="#d4a030" opacity="0.6"/>
+  <circle cx="345" cy="113" r="1.5" fill="#d4a030" opacity="0.6"/>
+  <!-- Herb flecks on front -->
+  <ellipse cx="260" cy="160" rx="3" ry="1.5" fill="#2e5339" opacity="0.4" transform="rotate(10,260,160)"/>
+  <ellipse cx="310" cy="180" rx="4" ry="2" fill="#4a7a4a" opacity="0.35" transform="rotate(-15,310,180)"/>
+  <ellipse cx="350" cy="155" rx="3" ry="1.5" fill="#2e5339" opacity="0.4" transform="rotate(20,350,155)"/>
+  <circle cx="285" cy="195" r="1.5" fill="#d4a030" opacity="0.4"/>
+  <circle cx="340" cy="200" r="1" fill="#d4a030" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="255" y="148" width="100" height="65" rx="4" fill="#2e5339" opacity="0.9"/>
+  <text x="305" y="167" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="10" font-weight="bold">PEAK PURE</text>
+  <text x="305" y="183" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="9" font-weight="bold">HERB &amp;</text>
+  <text x="305" y="197" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="9" font-weight="bold">GARLIC</text>
+  <text x="305" y="210" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="8">BUTTER</text>
+  <!-- Garlic bulb -->
+  <path d="M440,175 Q445,155 440,140 Q435,155 430,175 Z" fill="#f5f0e0" stroke="#d8d0b8" stroke-width="1"/>
+  <path d="M440,175 Q450,155 445,140 Q440,158 435,175 Z" fill="#ede5d5" stroke="#d8d0b8" stroke-width="0.5"/>
+  <path d="M440,175 Q435,155 432,145 Q438,155 440,175 Z" fill="#ede5d5" stroke="#d8d0b8" stroke-width="0.5"/>
+  <!-- Rosemary sprig -->
+  <line x1="160" y1="200" x2="200" y2="130" stroke="#5a7a3a" stroke-width="2"/>
+  <ellipse cx="185" cy="145" rx="3" ry="8" fill="#4a7a3a" opacity="0.7" transform="rotate(-30,185,145)"/>
+  <ellipse cx="190" cy="152" rx="3" ry="8" fill="#4a7a3a" opacity="0.7" transform="rotate(30,190,152)"/>
+  <ellipse cx="180" cy="155" rx="3" ry="7" fill="#5a8a4a" opacity="0.7" transform="rotate(-25,180,155)"/>
+  <ellipse cx="185" cy="163" rx="3" ry="7" fill="#5a8a4a" opacity="0.7" transform="rotate(25,185,163)"/>
+  <ellipse cx="175" cy="168" rx="3" ry="6" fill="#4a7a3a" opacity="0.7" transform="rotate(-30,175,168)"/>
+  <ellipse cx="178" cy="175" rx="3" ry="6" fill="#4a7a3a" opacity="0.7" transform="rotate(30,178,175)"/>
+  <text x="300" y="375" text-anchor="middle" fill="#2e5339" font-family="Georgia,serif" font-size="16" font-weight="bold" opacity="0.6">Herb &amp; Garlic Butter</text>
+</svg>

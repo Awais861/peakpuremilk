@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eef4e8"/>
+      <stop offset="100%" style="stop-color:#f5faff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <polygon points="0,285 100,215 200,255 300,195 400,245 500,210 600,255 600,285" fill="#2e5339" opacity="0.1"/>
+  <ellipse cx="300" cy="340" rx="260" ry="30" fill="#2e5339" opacity="0.06"/>
+  <!-- Bottle -->
+  <rect x="255" y="100" width="90" height="20" rx="4" fill="#b8c8b8"/>
+  <rect x="260" y="85" width="80" height="20" rx="3" fill="#7cb87c"/>
+  <path d="M255,120 L255,300 Q255,320 275,320 L325,320 Q345,320 345,300 L345,120 Z" fill="#fcfcff" stroke="#b8c8b8" stroke-width="2"/>
+  <path d="M265,120 L265,310 Q265,315 275,315 L280,315 L280,120 Z" fill="rgba(255,255,255,0.5)" opacity="0.5"/>
+  <path d="M257,155 L343,155 L343,300 Q343,318 325,318 L275,318 Q257,318 257,300 Z" fill="#f5f8ff" opacity="0.6"/>
+  <!-- Label -->
+  <rect x="265" y="195" width="70" height="65" rx="5" fill="#2e5339"/>
+  <text x="300" y="215" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="10" font-weight="bold">PEAK PURE</text>
+  <text x="300" y="235" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">SKIMMED</text>
+  <text x="300" y="252" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">MILK</text>
+  <!-- Green cap -->
+  <rect x="268" y="88" width="64" height="14" rx="3" fill="#7cb87c"/>
+  <text x="300" y="99" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">FAT FREE</text>
+  <!-- Badge -->
+  <circle cx="370" cy="160" r="25" fill="#7cb87c" opacity="0.9"/>
+  <text x="370" y="157" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="11" font-weight="bold">0.1%</text>
+  <text x="370" y="170" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="7">FAT</text>
+  <text x="300" y="375" text-anchor="middle" fill="#2e5339" font-family="Georgia,serif" font-size="16" font-weight="bold" opacity="0.6">Skimmed Milk</text>
+</svg>

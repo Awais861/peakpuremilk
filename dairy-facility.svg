@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eef5"/>
+      <stop offset="100%" style="stop-color:#f0f5fa"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0c8d0"/>
+      <stop offset="30%" style="stop-color:#e8ecf0"/>
+      <stop offset="60%" style="stop-color:#c0c8d0"/>
+      <stop offset="100%" style="stop-color:#d8dce0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <!-- Floor -->
+  <rect x="0" y="300" width="600" height="100" fill="#d8d4c8" rx="0 0 12 12"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#c8c0b0" stroke-width="1"/>
+  <!-- Wall tile pattern -->
+  <rect x="0" y="0" width="600" height="300" fill="#f5f8fa" opacity="0.3"/>
+  <!-- Milk tank 1 -->
+  <ellipse cx="180" cy="280" rx="60" ry="25" fill="url(#steel)" stroke="#a0a8b0" stroke-width="1.5"/>
+  <rect x="120" y="160" width="120" height="120" rx="8" fill="url(#steel)" stroke="#a0a8b0" stroke-width="1.5"/>
+  <ellipse cx="180" cy="160" rx="60" ry="25" fill="#d8e0e8" stroke="#a0a8b0" stroke-width="1.5"/>
+  <ellipse cx="180" cy="160" rx="50" ry="18" fill="#c0ccd8"/>
+  <!-- Pipes on tank -->
+  <rect x="235" y="200" width="30" height="6" rx="3" fill="#b0b8c0"/>
+  <circle cx="268" cy="203" r="6" fill="#a0a8b0"/>
+  <!-- Gauge -->
+  <circle cx="180" cy="210" r="15" fill="#fff" stroke="#a0a8b0" stroke-width="1.5"/>
+  <line x1="180" y1="210" x2="188" y2="203" stroke="#2e5339" stroke-width="2"/>
+  <circle cx="180" cy="210" r="3" fill="#2e5339"/>
+  <!-- Milk tank 2 -->
+  <ellipse cx="420" cy="280" rx="55" ry="22" fill="url(#steel)" stroke="#a0a8b0" stroke-width="1.5"/>
+  <rect x="365" y="170" width="110" height="110" rx="8" fill="url(#steel)" stroke="#a0a8b0" stroke-width="1.5"/>
+  <ellipse cx="420" cy="170" rx="55" ry="22" fill="#d8e0e8" stroke="#a0a8b0" stroke-width="1.5"/>
+  <ellipse cx="420" cy="170" rx="45" ry="16" fill="#c0ccd8"/>
+  <!-- Pipes -->
+  <rect x="140" y="120" width="280" height="8" rx="4" fill="#b8c0c8"/>
+  <rect x="170" y="120" width="8" height="45" rx="4" fill="#b8c0c8"/>
+  <rect x="410" y="120" width="8" height="55" rx="4" fill="#b8c0c8"/>
+  <!-- Digital display -->
+  <rect x="395" y="205" width="50" height="25" rx="3" fill="#1a2a1a"/>
+  <text x="420" y="222" text-anchor="middle" fill="#4ade80" font-family="monospace" font-size="12">4.2°C</text>
+  <!-- Clean floor shine -->
+  <ellipse cx="300" cy="350" rx="200" ry="20" fill="#fff" opacity="0.15"/>
+  <!-- Branding -->
+  <rect x="180" y="340" width="240" height="40" rx="8" fill="#2e5339" opacity="0.85"/>
+  <text x="300" y="358" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="12" font-weight="bold">PEAK PURE</text>
+  <text x="300" y="374" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="10">Modern Dairy Facility</text>
+</svg>

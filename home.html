@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeakPureCow Milk — Farm-Fresh Dairy Delivered to Your Door</title>
+  <link rel="icon" href="imgs/logo.svg" type="image/svg+xml">
+  <meta name="description" content="PeakPureCow Milk delivers 100% farm-fresh, hormone-free dairy straight from our pastures to your table. Milk and butter crafted with care for health-conscious families.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="PeakPureCow Milk — Farm-Fresh Dairy Delivered">
+  <meta property="og:description" content="Pure, sustainable dairy from pasture to your doorstep. Taste the difference of truly fresh milk and butter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.PeakPureCow Milk.com/">
+  <meta property="og:image" content="https://www.PeakPureCow Milk.com/imgs/og-home.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PeakPureCow Milk — Farm-Fresh Dairy Delivered">
+  <meta name="twitter:description" content="Pure, sustainable dairy from pasture to your doorstep.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="security.js"></script>
+  <script src="auth.js"></script>
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PeakPureCow Milk",
+    "url": "https://www.PeakPureCow Milk.com",
+    "logo": "https://www.PeakPureCow Milk.com/imgs/logo.png",
+    "description": "Premium farm-fresh dairy delivered to your door.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <!-- ====== PRELOADER ====== -->
+  <div class="page-preloader" id="page-preloader">
+    <div class="preloader__spinner"></div>
+    <p class="preloader__text">PeakPureCow Milk</p>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="home.html" class="logo"><img src="imgs/logo.svg" alt="PeakPureCow Milk logo" class="logo__icon" width="40" height="40">Peak<span>Pure</span>Cow Milk</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shop.html" class="btn btn--primary">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== SCROLL PROGRESS BAR ====== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero hero--tall">
+    <div class="hero__particles" aria-hidden="true"></div>
+    <div class="container">
+      <span class="hero__badge">&#127942; Rated #1 Farm-Fresh Dairy 2026</span>
+      <h1>The Milk Your Family Deserves — Straight From Sunlit Pastures</h1>
+      <p>Zero hormones. Zero compromise. Just the richest, creamiest dairy you've ever tasted — delivered from our farm to your doorstep before the dew dries.</p>
+      <div class="hero__actions">
+        <a href="shop.html" class="btn btn--gold">Get Your First Delivery</a>
+        <a href="about.html" class="btn btn--ghost">Watch Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== VALUE PROPOSITIONS ====== -->
+  <section class="section">
+    <div class="container" style="display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;">
+      <div class="value-prop" style="flex:1;max-width:420px;">
+        <div class="value-prop__icon">&#127793;</div>
+        <h3>Farm to Fridge in 48 Hours</h3>
+        <p>Our grass-fed cows are milked at dawn — and that milk reaches your fridge before most brands even leave the warehouse.</p>
+      </div>
+      <div class="value-prop" style="flex:1;max-width:420px;">
+        <div class="value-prop__icon">&#128156;</div>
+        <h3>Nothing Hidden. Ever.</h3>
+        <p>No hormones, no antibiotics, no preservatives lurking on the label. Just one ingredient: pure, honest milk.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURED PRODUCTS ====== -->
+  <section class="section section--alt">
+    <div class="container text-center">
+      <h2>Taste What You've Been Missing</h2>
+      <p>Every bottle, jar, and block is crafted in small batches — so the flavour is always at its peak.</p>
+      <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:2rem;">
+        <div class="card" style="flex:1;max-width:400px;">
+          <img class="card__img" src="imgs/whole-milk.svg" alt="Fresh whole milk in a glass bottle">
+          <div class="card__body">
+            <h3>Farm-Fresh Whole Milk</h3>
+            <p>Silky, full-bodied, and impossibly fresh. One glass and you'll wonder how you ever drank anything else.</p>
+            <a href="products.html" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+        <div class="card" style="flex:1;max-width:400px;">
+          <img class="card__img" src="imgs/unsalted-butter.svg" alt="Hand-churned farm butter on a wooden board">
+          <div class="card__body">
+            <h3>Hand-Churned Butter</h3>
+            <p>Golden, rich, and made in batches of fifty. Spread it on warm toast and you'll understand why our customers never go back.</p>
+            <a href="products.html" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FARM STORY TEASER ====== -->
+  <section class="section">
+    <div class="container split">
+      <img class="split__img" src="imgs/farm-pasture.svg" alt="Rolling green farmland with cows grazing at sunrise">
+      <div>
+        <h2>Two Generations. One Promise.</h2>
+        <p>Our parents started this farm with a simple belief: if you treat the land and the animals right, the milk takes care of itself. Today, our cows still roam free on 200 acres of pesticide-free pasture — and we still handle every step from milking to bottling by hand. You can taste the difference.</p>
+        <a href="about.html" class="btn btn--outline">Discover Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== IMPACT STATS ====== -->
+  <section class="section section--stats">
+    <div class="container">
+      <h2 class="text-center">Our Impact in Numbers</h2>
+      <p class="text-center" style="max-width:600px;margin:0 auto 3rem;">Every bottle of PeakPureCow Milk makes a real difference — for families, farms, and the future.</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__number">5,000+</div>
+          <div class="stat__label">Happy Families Served</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">200</div>
+          <div class="stat__label">Acres of Free-Range Pasture</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">48</div>
+          <div class="stat__label">Hours Farm-to-Fridge</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST BADGES ====== -->
+  <section class="section section--alt">
+    <div class="container text-center">
+      <h2>Why Families Trust Us</h2>
+      <div class="trust-badges" style="margin-top: 2.5rem;">
+        <div class="badge">
+          <div class="badge__icon">&#128274;</div>
+          <h4>100% Hormone-Free</h4>
+          <p>Independently tested and certified</p>
+        </div>
+        <div class="badge">
+          <div class="badge__icon">&#128588;</div>
+          <h4>Satisfaction Guarantee</h4>
+          <p>Love it or your money back — no questions</p>
+        </div>
+        <div class="badge">
+          <div class="badge__icon">&#127981;</div>
+          <h4>Family-Owned Since 2025</h4>
+          <p>Two generations, one unwavering standard</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="section section--testimonials">
+    <div class="container text-center">
+      <h2>Don't Take Our Word for It</h2>
+      <div class="grid-3" style="margin-top: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <div class="testimonial">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"The moment I poured PeakPureCow Milk, my kids stopped reaching for juice boxes. Now they ask for seconds. That says everything."</blockquote>
+          <cite>— Arshad Nadeem</cite>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"I've tried every 'premium' milk on the shelf. Nothing comes close. This is the real thing — sustainable, delicious, and worth every penny."</blockquote>
+          <cite>— Muhammad Ayub</cite>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"The butter is extraordinary. Golden, rich, and nothing like store-bought. I use it on everything now — toast, cooking, baking. Simply the best."</blockquote>
+          <cite>— Rashid Minhas</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FLOATING CTA BANNER ====== -->
+  <section class="section cta-banner">
+    <div class="container text-center">
+      <h2>Ready to Taste the Difference?</h2>
+      <p>Your first delivery is just a click away. Free shipping on orders over Rs.5,000.</p>
+      <a href="shop.html" class="btn btn--gold btn--lg">Start Shopping Now</a>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER ====== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join 5,000+ Families Who Drink Better</h2>
+      <p>Seasonal recipes, farm updates, and subscriber-only offers — straight to your inbox, never to your spam folder.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <label for="email-home" class="sr-only">Email address</label>
+        <input type="email" id="email-home" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn--gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Peak<span style="color: var(--color-gold);">Pure</span>Milk</h4>
+          <p>Premium, farm-fresh dairy for families who believe in eating well and living sustainably. From our pasture to your table since 2025.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/17UFMVhR2B/" aria-label="Facebook" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/peakpurecowmilk?igsh=ejdtYzNreDQ5OGMz" aria-label="Instagram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://x.com/razirehn95974" aria-label="Twitter" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://t.me/peakpurwcowmilk" aria-label="Telegram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>R956+PXCNear Beacon House School, Attock, Pakistan</p>
+          <p>awaisrazaattari0@gmail.com<br>+92 3369413146</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PeakPureCow Milk. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="PeakPureCow Milk.js"></script>
+
+  <!-- ====== CHATBOT & WHATSAPP WIDGETS ====== -->
+  <!-- Chatbot Window -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 1 4.35L2 22l5.65-1C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-2 13.5c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5h-1zm3.07-4.25c-.43.51-.9.8-.9 1.25v.5h-1.5v-.65c0-.78.54-1.3 1.03-1.75.43-.39.72-.67.72-1.1 0-.55-.45-1-1-1-.56 0-1 .45-1 1H8.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .76-.53 1.28-.93 1.75z"/></svg>
+      </div>
+      <div class="chatbot-header-info">
+        <h3>Peak Pure Assistant</h3>
+        <p>Online — Ask me anything!</p>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+      <input type="text" placeholder="Type your question..." aria-label="Type your message" maxlength="500">
+      <button class="chatbot-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Chatbot Toggle -->
+  <div class="floating-widgets">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Peak Pure Assistant">
+      <svg class="icon-chat" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+
+  <!-- WhatsApp Floating Button (Homepage Only) -->
+  <a href="https://wa.me/923369413146" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__tooltip">Chat with us!</span>
+  </a>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>

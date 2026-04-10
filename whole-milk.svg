@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0e4"/>
+      <stop offset="100%" style="stop-color:#faf6ef"/>
+    </linearGradient>
+    <linearGradient id="milk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0ece3"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.4)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.1)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.3)"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <!-- Mountains -->
+  <polygon points="0,280 80,200 160,250 240,180 320,230 400,190 480,240 560,210 600,250 600,280" fill="#2e5339" opacity="0.15"/>
+  <polygon points="0,300 100,240 200,270 300,220 400,260 500,230 600,270 600,300" fill="#2e5339" opacity="0.1"/>
+  <!-- Grass -->
+  <ellipse cx="300" cy="340" rx="260" ry="30" fill="#2e5339" opacity="0.08"/>
+  <!-- Bottle -->
+  <rect x="255" y="100" width="90" height="20" rx="4" fill="#d4cbb8"/>
+  <rect x="260" y="85" width="80" height="20" rx="3" fill="#c8a951"/>
+  <path d="M255,120 L255,300 Q255,320 275,320 L325,320 Q345,320 345,300 L345,120 Z" fill="url(#milk)" stroke="#d4cbb8" stroke-width="2"/>
+  <path d="M265,120 L265,310 Q265,315 275,315 L280,315 L280,120 Z" fill="url(#glass)" opacity="0.5"/>
+  <!-- Milk level -->
+  <path d="M257,140 L343,140 L343,300 Q343,318 325,318 L275,318 Q257,318 257,300 Z" fill="#ffffff" opacity="0.7"/>
+  <!-- Label -->
+  <rect x="265" y="200" width="70" height="60" rx="5" fill="#2e5339"/>
+  <text x="300" y="222" text-anchor="middle" fill="#c8a951" font-family="Georgia,serif" font-size="10" font-weight="bold">PEAK PURE</text>
+  <text x="300" y="238" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">WHOLE</text>
+  <text x="300" y="252" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="11" font-weight="bold">MILK</text>
+  <!-- Cream cap -->
+  <rect x="268" y="88" width="64" height="14" rx="3" fill="#c8a951"/>
+  <text x="300" y="99" text-anchor="middle" fill="#2e5339" font-family="Arial,sans-serif" font-size="8" font-weight="bold">100% NATURAL</text>
+  <!-- Decorative leaves -->
+  <path d="M220,160 Q200,140 210,120 Q220,140 240,150 Z" fill="#2e5339" opacity="0.3"/>
+  <path d="M380,160 Q400,140 390,120 Q380,140 360,150 Z" fill="#2e5339" opacity="0.3"/>
+  <!-- Bottom branding -->
+  <text x="300" y="375" text-anchor="middle" fill="#2e5339" font-family="Georgia,serif" font-size="16" font-weight="bold" opacity="0.6">Farm-Fresh Whole Milk</text>
+</svg>
